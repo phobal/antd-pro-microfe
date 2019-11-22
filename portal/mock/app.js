@@ -1,7 +1,7 @@
 export default {
   'GET /api/apps': [
     {
-      name: 'app1',
+      name: 'app1-umi', // hack
       entry: 'http://localhost:8011',
       base: '/app1',
       mountElementId: 'root-slave'
