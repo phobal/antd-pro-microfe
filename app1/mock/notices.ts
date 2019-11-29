@@ -101,5 +101,5 @@ const getNotices = (req: Request, res: Response) => {
 };
 
 export default {
-  'GET /api/app1/notices': getNotices,
+  'GET /api-app1/notices': getNotices,
 };

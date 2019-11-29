@@ -6,7 +6,7 @@ function getFakeCaptcha(req: Request, res: Response) {
 // 代码中会兼容本地 service mock 以及部署站点的静态数据
 export default {
   // 支持值为 Object 和 Array
-  'GET /api/app1/currentUser': {
+  'GET /api-app1/currentUser': {
     name: 'Serati Ma',
     avatar: 'https://gw.alipayobjects.com/zos/antfincdn/XAosXuNZyF/BiazfanxmamNRoxxVxka.png',
     userid: '00000001',
@@ -57,7 +57,7 @@ export default {
     phone: '0752-268888888',
   },
   // GET POST 可省略
-  'GET /api/app1/users': [
+  'GET /api-app1/users': [
     {
       key: '1',
       name: 'John Brown',
@@ -77,7 +77,7 @@ export default {
       address: 'Sidney No. 1 Lake Park',
     },
   ],
-  'POST /api/app1/login/account': (req: Request, res: Response) => {
+  'POST /api-app1/login/account': (req: Request, res: Response) => {
     const { password, userName, type } = req.body;
     if (password === 'ant.design' && userName === 'admin') {
       res.send({
@@ -101,7 +101,7 @@ export default {
       currentAuthority: 'guest',
     });
   },
-  'POST /api/app1/register': (req: Request, res: Response) => {
+  'POST /api-app1/register': (req: Request, res: Response) => {
     res.send({ status: 'ok', currentAuthority: 'user' });
   },
   'GET /api/500': (req: Request, res: Response) => {
@@ -113,7 +113,7 @@ export default {
       path: '/base/category/list',
     });
   },
-  'GET /api/app1/404': (req: Request, res: Response) => {
+  'GET /api-app1/404': (req: Request, res: Response) => {
     res.status(404).send({
       timestamp: 1513932643431,
       status: 404,
@@ -122,7 +122,7 @@ export default {
       path: '/base/category/list/2121212',
     });
   },
-  'GET /api/app1/403': (req: Request, res: Response) => {
+  'GET /api-app1/403': (req: Request, res: Response) => {
     res.status(403).send({
       timestamp: 1513932555104,
       status: 403,
