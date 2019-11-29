@@ -3,6 +3,11 @@ export default {
     '/api/app1': {
       target: 'http://localhost:8011',
       changeOrigin: true
+    },
+    '/api': {
+      target: 'https://easy-mock.bookset.io/mock/5dc1032e9e606017b5d2c92d',
+      changeOrigin: true,
+      pathRewrite: (path) => path.replace(/^\/api/, '')
     }
   },
   plugins: [

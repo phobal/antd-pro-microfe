@@ -1,7 +1,8 @@
 {
   "name": "master",
   "scripts": {
-    "start": "umi dev",
+    "start": "MOCK=none umi dev",
+    "start:mock": "umi dev",
     "build": "COMPRESS=none umi build",
     "test": "umi test"
   },
