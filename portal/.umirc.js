@@ -1,6 +1,6 @@
 export default {
   proxy: {
-    '/api/app1': {
+    '/api-app1': {
       target: 'http://localhost:8011',
       changeOrigin: true
     },
