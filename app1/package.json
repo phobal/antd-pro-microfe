@@ -50,7 +50,7 @@
     "@ant-design/colors": "^3.1.0",
     "@ant-design/pro-layout": "^4.5.16",
     "@antv/data-set": "^0.10.2",
-    "@umijs/plugin-qiankun": "^1.3.2",
+    "@umijs/plugin-qiankun": "^1.3.4",
     "antd": "^3.23.6",
     "classnames": "^2.2.6",
     "dva": "^2.4.1",
