@@ -1,0 +1,13 @@
+{
+  "name": "antd-pro-microfe",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/phobal/antd-pro-microfe.git",
+  "author": "Phobal <phobal@126.com>",
+  "scripts": {
+    "start": "yarn start:app1 | yarn start:portal",
+    "start:app1": "cd ./app1 && yarn start",
+    "start:portal": "cd ./portal && yarn start"
+  },
+  "license": "MIT"
+}
